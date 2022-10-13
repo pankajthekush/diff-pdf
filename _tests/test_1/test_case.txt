@@ -1,0 +1,1 @@
+this test should yield 0 as return code because both pdfs are identical

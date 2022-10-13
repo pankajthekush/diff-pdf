@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# build the docker file and push
+
+docker-compose build --no-cache

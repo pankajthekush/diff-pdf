@@ -1,0 +1,16 @@
+version: '2.4'
+
+services:
+  pdiffer:
+    image: pkumdev/diff-pdf
+    init: true
+    logging:
+      driver: json
+      options:
+        max-size: 2m
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000
+      
