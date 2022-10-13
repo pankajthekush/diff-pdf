@@ -5,7 +5,7 @@ services:
     image: pkumdev/diff-pdf
     init: true
     logging:
-      driver: json
+      driver: json-file
       options:
         max-size: 2m
     build:
@@ -13,4 +13,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8000
-      
+    
